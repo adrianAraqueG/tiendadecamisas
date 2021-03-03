@@ -69,8 +69,9 @@
                     $_SESSION['error_login'] = "</strong class='alert_red'>Error al iniciar sesión</strong>";
                 }
             }
+
             //Redirección
-           header("Location: ".base_url);
+           header("Location:".base_url);
             
         }
         // EXIT LOGIN
