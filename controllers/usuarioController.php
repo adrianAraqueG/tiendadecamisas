@@ -24,7 +24,7 @@
                 $password = isset($_POST['pass']) ? trim($_POST['pass']) : false;
 
                 $validar = Utilities::validate($nombre, $apellido, $email, $password);
-                var_dump($validar);
+                //var_dump($validar);
                 if($validar == false){
                     $usuario = new Usuario;
                     $usuario->setNombre($nombre);
