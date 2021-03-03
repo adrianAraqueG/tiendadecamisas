@@ -34,15 +34,15 @@
                     $save = $usuario->save();
 
                     if($save){
-                        $_SESSION[register]= 'complete';
+                        $_SESSION['register']= 'complete';
                     }else{
-                        $_SESSION[register]= 'failed';
+                        $_SESSION['register']= 'failed';
                     }
                 }else{
-                    $_SESSION[register]= $validar;
+                    $_SESSION['register']= $validar;
                 }
             }else{
-                $_SESSION[register]= "<strong class='alert_red'>Algo ha fallado :(</strong>";
+                $_SESSION['register']= "<strong class='alert_red'>Algo ha fallado :(</strong>";
             }
 
             // Redirección 
